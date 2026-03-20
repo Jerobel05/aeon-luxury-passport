@@ -1,0 +1,98 @@
+[
+  {
+    "id": "aeon-slide-01",
+    "position": 1,
+    "filepath": "src/pages/slides/Slide01Title.tsx",
+    "title": "AEON — Titre",
+    "description": "Slide de titre : Passeport Numérique de Luxe",
+    "speakerNotes": "Bonjour à tous. Notre projet s'appelle AEON. C'est un site web qui permet de créer un passeport numérique pour les montres de luxe. L'idée c'est simple : quand vous achetez une montre chère, vous voulez être sûr qu'elle est vraie. Avec AEON, on règle ce problème grâce à la technologie blockchain. Et le plus important : l'utilisateur n'a pas besoin de savoir ce qu'est la blockchain pour utiliser le site. Tout est simple et automatique."
+  },
+  {
+    "id": "aeon-slide-02",
+    "position": 2,
+    "filepath": "src/pages/slides/Slide02Problematique.tsx",
+    "title": "Problématique",
+    "description": "Le marché des montres de luxe sans traçabilité fiable",
+    "speakerNotes": "Le problème qu'on a voulu résoudre, c'est ça : le marché des montres de luxe d'occasion pèse 40 milliards de dollars par an. C'est énorme. Mais il n'existe aucun moyen simple et fiable de prouver qu'une montre est authentique. Environ la moitié des pièces en circulation ne sont pas bien authentifiées. Et il n'y a aucun historique numérique universel — on ne sait pas qui a possédé la montre avant, si elle a été révisée, etc. C'est ce vide qu'AEON comble."
+  },
+  {
+    "id": "aeon-slide-03",
+    "position": 3,
+    "filepath": "src/pages/slides/Slide03Solution.tsx",
+    "title": "La Solution AEON",
+    "description": "Concept du passeport numérique Web3 invisible",
+    "speakerNotes": "Notre solution fonctionne en 3 étapes très simples. D'abord, l'utilisateur prend une photo de sa montre avec son téléphone ou son ordinateur — pas de QR code, pas d'étiquette. L'intelligence artificielle reconnaît la montre toute seule. Ensuite, on crée automatiquement un certificat numérique sur la blockchain — c'est ce qu'on appelle un NFT. Enfin, tout ça se fait sans que l'utilisateur ait à payer quoi que ce soit ni à comprendre la technologie. C'est le Web3 invisible : la blockchain est là, mais on ne la voit pas."
+  },
+  {
+    "id": "aeon-slide-04",
+    "position": 4,
+    "filepath": "src/pages/slides/Slide04Stack.tsx",
+    "title": "Stack Technologique",
+    "description": "React, wagmi, viem, Ethereum, IPFS — architecture complète",
+    "speakerNotes": "Pour construire ce site, on a utilisé plusieurs technologies. Pour la partie visuelle, on a React et Vite — ce sont des outils très répandus pour créer des sites web modernes. On a ajouté TypeScript pour la rigueur du code, Tailwind pour le design, et Framer Motion pour les animations fluides. Pour la partie blockchain, on a utilisé wagmi et viem — deux bibliothèques récentes qui permettent de se connecter à Ethereum facilement. Et pour le stockage des données, on a IPFS, qui est un système où les fichiers sont stockés sur des milliers d'ordinateurs à la fois, pas sur un seul serveur."
+  },
+  {
+    "id": "aeon-slide-05",
+    "position": 5,
+    "filepath": "src/pages/slides/Slide05ScanIA.tsx",
+    "title": "Scan IA",
+    "description": "Reconnaissance visuelle de la montre par intelligence artificielle",
+    "speakerNotes": "Voici comment fonctionne le scan. L'utilisateur arrive sur la page Scanner du site. Il voit une animation qui simule la prise de photo. Le site envoie l'image à un service d'intelligence artificielle qui analyse le cadran, les aiguilles et la forme de la montre. En quelques secondes, il renvoie le nom du modèle, la référence et la marque. Dans notre démo, c'est simulé, mais le même mécanisme fonctionnerait avec une vraie IA comme GPT-4o Vision. Le résultat s'affiche avec une animation de révélation progressive, ce qui donne un effet premium."
+  },
+  {
+    "id": "aeon-slide-06",
+    "position": 6,
+    "filepath": "src/pages/slides/Slide06NFT.tsx",
+    "title": "NFT ERC-721",
+    "description": "Le passeport numérique sous forme de NFT blockchain",
+    "speakerNotes": "Une fois la montre reconnue, on crée son passeport numérique. Ce passeport prend la forme d'un NFT — un jeton numérique unique sur la blockchain Ethereum. NFT veut dire que ce certificat ne peut pas être copié ou falsifié. Sur la page Passeport du site, on voit toutes les informations : le propriétaire actuel, l'adresse du contrat intelligent, le lien vers les données stockées sur IPFS, et la date de création. On voit aussi l'historique complet — par exemple quand la montre a changé de propriétaire ou a été révisée. Pour créer ces passeports, on a conçu trois contrats intelligents : WatchNFT pour le certificat, WatchPassport pour les métadonnées, et WatchMarket pour le marché."
+  },
+  {
+    "id": "aeon-slide-07",
+    "position": 7,
+    "filepath": "src/pages/slides/Slide07AA.tsx",
+    "title": "Account Abstraction ERC-4337",
+    "description": "Le Web3 invisible : transactions gasless pour l'utilisateur",
+    "speakerNotes": "C'est l'un des points les plus importants du projet. Normalement, quand on fait une action sur la blockchain — comme créer un NFT ou vendre une montre — il faut payer des frais appelés gas fees. Ça oblige l'utilisateur à avoir des cryptomonnaies, ce qui freine beaucoup de gens. Avec le standard ERC-4337, on a mis en place un système où ces frais sont payés à la place de l'utilisateur par ce qu'on appelle un Paymaster. Résultat : l'utilisateur clique sur un bouton, la transaction se fait, et il ne voit rien de technique. C'est exactement comme utiliser une application normale."
+  },
+  {
+    "id": "aeon-slide-08",
+    "position": 8,
+    "filepath": "src/pages/slides/Slide08IPFS.tsx",
+    "title": "IPFS & Arweave",
+    "description": "Stockage décentralisé et permanent des métadonnées",
+    "speakerNotes": "Pour stocker les informations des passeports, on n'utilise pas un serveur classique. Pourquoi ? Parce qu'un serveur classique peut tomber en panne, être piraté, ou être éteint. À la place, on utilise IPFS : c'est un réseau où les fichiers sont copiés sur des milliers d'ordinateurs dans le monde. Si l'un tombe, les autres prennent le relais. Pour garantir que les données durent très longtemps, on peut aussi utiliser Arweave, qui stocke les fichiers de façon permanente. Le résultat, c'est que le certificat d'une montre ne pourra jamais être supprimé ou modifié — même dans 50 ans."
+  },
+  {
+    "id": "aeon-slide-09",
+    "position": 9,
+    "filepath": "src/pages/slides/Slide09Interface.tsx",
+    "title": "Interface Utilisateur",
+    "description": "Les 5 pages de l'application AEON",
+    "speakerNotes": "Le site est composé de 5 pages. La page Accueil, c'est l'entrée : design luxueux noir et or, une phrase d'accroche et un bouton pour commencer. La page Scanner, c'est là où l'utilisateur analyse sa montre — on voit l'animation du scan et les résultats. La page Passeport est la plus importante : elle affiche le certificat complet avec toutes les informations blockchain et l'historique. La page Revente permet de mettre la montre en vente sur le marché secondaire, avec le prix en ETH et une note sur l'état. Enfin, la page Architecture montre les schémas techniques du projet — utile pour expliquer comment ça fonctionne en coulisses."
+  },
+  {
+    "id": "aeon-slide-10",
+    "position": 10,
+    "filepath": "src/pages/slides/Slide10UML.tsx",
+    "title": "Diagrammes UML",
+    "description": "Architecture système, séquence de mint et contrats intelligents",
+    "speakerNotes": "Pour montrer comment tout s'articule techniquement, on a créé trois schémas directement dans le site. Le premier montre l'architecture globale : comment l'appareil de l'utilisateur communique avec le frontend, la blockchain et IPFS. Le deuxième, le diagramme de séquence, montre l'ordre des étapes quand on crée un passeport — de la photo jusqu'au NFT émis. Le troisième montre les trois contrats intelligents qu'on a conçus et leurs fonctions. Ces schémas sont accessibles depuis la barre de navigation du site, dans la page Architecture."
+  },
+  {
+    "id": "aeon-slide-11",
+    "position": 11,
+    "filepath": "src/pages/slides/Slide11Bilan.tsx",
+    "title": "Bilan & Perspectives",
+    "description": "Ce qui a été réalisé et les évolutions possibles",
+    "speakerNotes": "Voici ce qu'on a réussi à faire. On a construit un site complet avec 5 pages, un design luxueux cohérent du début à la fin. On a simulé de manière réaliste le scan IA, la création du NFT et l'authentification. On a modélisé le système ERC-4337 avec le Paymaster pour que l'expérience soit sans friction. On a intégré trois schémas UML directement dans le site. Et tout est en français par défaut, avec un toggle pour passer en anglais. En perspective, on pourrait connecter une vraie IA de vision, déployer les vrais contrats sur le testnet Ethereum Sepolia, et ouvrir la plateforme à d'autres objets de luxe comme les sacs ou les bijoux."
+  },
+  {
+    "id": "aeon-slide-12",
+    "position": 12,
+    "filepath": "src/pages/slides/Slide12Cloture.tsx",
+    "title": "Clôture",
+    "description": "Slide de fin — merci et questions",
+    "speakerNotes": "Voilà, c'est la fin de notre présentation. Pour résumer en une phrase : AEON prouve qu'on peut utiliser la blockchain dans un vrai produit grand public, sans que l'utilisateur s'en rende compte. On espère que ce projet vous a montré comment des technologies avancées peuvent se mettre au service d'une expérience simple et élégante. Merci beaucoup pour votre attention, et on est disponibles pour répondre à vos questions."
+  }
+]

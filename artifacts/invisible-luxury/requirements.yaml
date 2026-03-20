@@ -1,0 +1,26 @@
+packages:
+  "framer-motion": "For elegant, sophisticated scroll reveal animations"
+  "clsx": "For conditionally joining tailwind classes"
+  "tailwind-merge": "For merging tailwind classes safely"
+
+images:
+  - path: "artifacts/invisible-luxury/public/images/hero-bg.png"
+    description: "Abstract ultra-luxury aesthetic, subtle elegant golden light passing through pure dark metallic surface, cinematic lighting, moody, architectural"
+    aspect_ratio: "16:9"
+  - path: "artifacts/invisible-luxury/public/images/matter.png"
+    description: "Macro photography of raw black carbon and brushed dark titanium, ultimate luxury texture, dramatic lighting, sharp details"
+    aspect_ratio: "3:4"
+  - path: "artifacts/invisible-luxury/public/images/silence.png"
+    description: "Minimalist dark architectural abstract, soft shadows on perfectly smooth matte black surfaces, representing pure acoustic silence"
+    aspect_ratio: "3:4"
+  - path: "artifacts/invisible-luxury/public/images/precision.png"
+    description: "Microscopic abstract view of perfectly machined dark metal components, high-end Swiss watchmaking aesthetic, sharp edges, dark grey"
+    aspect_ratio: "3:4"
+  - path: "artifacts/invisible-luxury/public/images/transmission.png"
+    description: "Abstract cinematic shot of dark smoked glass and pure light, symbolizing heritage and passing of time, extremely minimal and moody"
+    aspect_ratio: "3:4"
+
+notes:
+  - Static site with a bilingual (EN/FR) toggle using React Context.
+  - Using framer-motion for smooth, editorial-style reveal animations.
+  - Relying on CSS variables for a forced "dark luxury" theme.
